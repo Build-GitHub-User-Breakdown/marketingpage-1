@@ -7,8 +7,6 @@
         width: @nav-container-width;
         height: @nav-container-height;
         margin: auto;
-        padding: 0;
-        border: 1px solid blue;
         .flexBox(row, wrap, space-between);
 
         .nav-logo-txt{
@@ -17,8 +15,13 @@
         }
 
         .nav-links{
-            width:50%;
-            border: 1px solid yellow;
+            width: @nav-links-width;
+            .flexBox(row, wrap, space-between);
+            
+            a{
+                text-decoration: none;
+                .fontFace(@white, 1.5rem);
+            }
         }
     }
 }
