@@ -1,8 +1,14 @@
-.flexBox(){
-    display: flex-box;
+.flexBox(@direction: row; @wrap: wrap; @justify: flex-start; @alignContent: center ; @alignItems:center){
+    display: flex;
+    flex-flow: @direction @wrap;
+    justify-content: @justify;
+    align-content: @alignContent;
+    align-items: @alignItems;
 }
 
-.fontFace(@font-size: 1em; @fontWeight: normal; @fontFamily: @system-fonts){
+.fontFace(@fontColor; @fontSize: 1rem; @fontFamily: @system-fonts; @fontWeight: normal){
     font-family: @fontFamily;
+    font-size: @fontSize;
     font-weight: @fontWeight;
+    color: @fontColor;
 }

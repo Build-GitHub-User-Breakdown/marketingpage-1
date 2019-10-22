@@ -1,16 +1,32 @@
 .nav-bar{
-    width: 100%;
+    width: @full-width;
     font-family: @system-fonts;
+    background-color: @nav-bg;
     
     .nav-container{
-        .flexBox();
-        border: 1px solid blue;
-        background-color: @nav-bg;
+        width: @nav-container-width;
+        max-height: @nav-container-height;
+        margin: auto;
+        .flexBox(row, wrap, space-between);
 
         .nav-logo-txt{
-            font-family: @ubuntu-font;
-            font-weight: 900;
-            color: @nav-logo-color;
+            padding: 0;
+            .fontFace(@white, 4rem, @ubuntu-font, bolder);
+        }
+
+        .nav-links{
+            width: @nav-links-width;
+
+            .flexBox(row, wrap, space-between);
+            
+            a{
+                text-decoration: none;
+                .fontFace(@github-lightGrey-rgba, 1.5rem);
+
+                &:hover{
+                    color: @github-purple-alt-rgba;
+                }
+            }
         }
     }
 }
