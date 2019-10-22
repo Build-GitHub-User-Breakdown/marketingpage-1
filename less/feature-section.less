@@ -37,8 +37,7 @@
         .features-img-container{
            // width: @features-img-container-width;
             width: 40%;
-         
-           
+            
             img{
                 width: @full-width;
                 height: @full-width;
@@ -46,17 +45,33 @@
         }
 
         .features-content{
-            border: 1px solid blue;
+        
             width: @features-img-container-width;
             .flexBox(row, wrap, flex-start, flex-start, flex-start);
 
             h2{
                 width: @full-width;
-                margin: 0;
-                padding: 0;
-                border: 1px solid red;
+                margin: 0 0 2% 0;
+                padding-bottom: 2%;
                 .fontFace(@github-altGrey-rgba, 5rem, @display-font, bold);
                 border-bottom: 1.5px solid @github-altGrey-rgba;
+            }
+
+            .feature-card{
+                width: @feature-card-width;
+                margin: 1% auto;
+                .flexBox(row, wrap, space-between, center, center);
+
+                .icon{
+                    font-size: 3rem;
+                    color: @icon-color;
+                    padding: 0 20px;
+                }
+
+                .features-txt{
+                    width: @feature-card-txt-width;
+                    .fontFace(@github-drkGrey-rgba, 1.8rem, @mono-font, 900);
+                }
             }
         }
     }
