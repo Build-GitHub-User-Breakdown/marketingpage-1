@@ -24,23 +24,29 @@
 
 .features-section{
     width: @full-width;
-    .flexBox(row, wrap, space-between, center, center);
+    border: 1px solid blue;
+    // .flexBox(row, wrap, space-between, center, center);
     background-color: @white;
-
-    .features-img{
-        width: @features-content-width;
-        height: 100%;
-        padding: 0;
-        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../imgs/people.jpg') no-repeat center/100% ;
-
-       img{
-           width: 100%;
-           height: 100%;
-       }
-    }
-
-    .features-content{
-        width: @features-content-width;
+    
+    .feature-container{
+        width: @feature-container-width;
+        margin: auto;
+        .flexBox(row, wrap, space-between, center, center);
         border: 1px solid red;
+
+        .features-img-container{
+            border: 1px solid green;
+            width: @features-img-container-width;
+           
+            img{
+                width: @full-width;
+                height: @full-width;
+            }
+        }
+
+        .features-content{
+            border: 1px solid blue;
+            width: @features-img-container-width;
+        }
     }
 }
