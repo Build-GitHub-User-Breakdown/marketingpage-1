@@ -480,6 +480,11 @@ header .hero-container .hero-header-container a:hover {
   font-weight: 700;
   color: #333333;
 }
+.icon {
+  font-size: 2.5rem;
+  color: #0366d6;
+  padding-right: 10px;
+}
 .community-section {
   width: 100%;
   background-color: white;
@@ -530,11 +535,6 @@ header .hero-container .hero-header-container a:hover {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-}
-.community-section .community-container .community-content .community-card .icon {
-  font-size: 2.5rem;
-  color: #0366d6;
-  padding-right: 10px;
 }
 .community-section .community-container .community-content .community-card .star {
   color: #ffd33d;
@@ -603,18 +603,13 @@ header .hero-container .hero-header-container a:hover {
   align-content: center;
   align-items: center;
 }
-.analytics-section .analytics-container .analytics-content .analytics-card .icon {
-  font-size: 2.5rem;
-  color: #0366d6;
-  padding-right: 10px;
-}
-.analytics-section .analytics-container .analytics-content .analytics-card .star {
-  color: #ffd33d;
-}
-.analytics-section .analytics-container .analytics-content .analytics-card .fire {
+.analytics-section .analytics-container .analytics-content .analytics-card .pulse {
   color: #d73a49;
 }
-.analytics-section .analytics-container .analytics-content .analytics-card .comments {
+.analytics-section .analytics-container .analytics-content .analytics-card .branch {
+  color: #6e5494;
+}
+.analytics-section .analytics-container .analytics-content .analytics-card .chart {
   color: #28a745;
 }
 .analytics-section .analytics-container .analytics-content .analytics-card .analytics-txt {
