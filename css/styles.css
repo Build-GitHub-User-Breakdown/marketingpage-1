@@ -74,6 +74,7 @@ html {
  */
 body {
   margin: 0;
+  background-color: #f5f5f5;
 }
 /**
  * Render the `main` element consistently in IE.
@@ -377,7 +378,7 @@ header {
 }
 .nav-bar .nav-container {
   width: 85%;
-  height: 75px;
+  height: 60px;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
