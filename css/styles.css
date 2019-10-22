@@ -482,22 +482,20 @@ header .hero-container .hero-header-container a:hover {
 }
 .features-section {
   width: 100%;
-  border: 1px solid blue;
   background-color: white;
 }
 .features-section .feature-container {
   width: 80%;
+  padding: 5% 0;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  border: 1px solid red;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 .features-section .feature-container .features-img-container {
-  border: 1px solid green;
-  width: 50%;
+  width: 40%;
 }
 .features-section .feature-container .features-img-container img {
   width: 100%;
@@ -506,4 +504,20 @@ header .hero-container .hero-header-container a:hover {
 .features-section .feature-container .features-content {
   border: 1px solid blue;
   width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.features-section .feature-container .features-content h2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #4a4857;
+  border-bottom: 1.5px solid #4a4857;
 }

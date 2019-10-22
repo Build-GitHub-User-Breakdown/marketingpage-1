@@ -24,19 +24,20 @@
 
 .features-section{
     width: @full-width;
-    border: 1px solid blue;
     // .flexBox(row, wrap, space-between, center, center);
     background-color: @white;
     
     .feature-container{
         width: @feature-container-width;
+        padding: 5% 0;
         margin: auto;
-        .flexBox(row, wrap, space-between, center, center);
-        border: 1px solid red;
+        .flexBox(row, wrap, space-between, flex-start, flex-start);
+ 
 
         .features-img-container{
-            border: 1px solid green;
-            width: @features-img-container-width;
+           // width: @features-img-container-width;
+            width: 40%;
+         
            
             img{
                 width: @full-width;
@@ -47,6 +48,16 @@
         .features-content{
             border: 1px solid blue;
             width: @features-img-container-width;
+            .flexBox(row, wrap, flex-start, flex-start, flex-start);
+
+            h2{
+                width: @full-width;
+                margin: 0;
+                padding: 0;
+                border: 1px solid red;
+                .fontFace(@github-altGrey-rgba, 5rem, @display-font, bold);
+                border-bottom: 1.5px solid @github-altGrey-rgba;
+            }
         }
     }
 }
