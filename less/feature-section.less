@@ -5,7 +5,7 @@
         width: @feature-section-container;
         margin: 0 auto;
         padding: 3% 0;
-        .flexBox(row, wrap, center,  center, center);
+        .flexBox(row, wrap, center, center, center);
 
         .feature-heading{
             width: @feature-header-width;
@@ -22,22 +22,22 @@
     }
 }
 
-.features-section{
+//Community Section
+.community-section{
     width: @full-width;
     // .flexBox(row, wrap, space-between, center, center);
     background-color: @white;
     
-    .feature-container{
-        width: @feature-container-width;
+    .community-container{
+        width: @community-container-width;
         padding: 5% 0;
         margin: auto;
-        .flexBox(row, wrap, space-between, flex-start, flex-start);
+        .flexBox(row, wrap, space-evenly, center, center);
  
 
-        .features-img-container{
-           // width: @features-img-container-width;
-            width: 40%;
-            
+        .community-img-container{
+           // width: @community-img-container-width;
+            width: @community-img-container-width;
             img{
                 width: @full-width;
                 height: @full-width;
@@ -45,22 +45,24 @@
             }
         }
 
-        .features-content{
-        
-            width: @features-img-container-width;
-            .flexBox(row, wrap, flex-start, flex-start, flex-start);
+        .community-content{
+            width: @community-content-container;
+            padding: 0;
+            .flexBox(row, wrap, space-evenly, center, center);
 
             h2{
                 width: @full-width;
+                text-align: center;
                 margin: 0 0 2% 0;
                 padding-bottom: 2%;
-                .fontFace(@github-drkGrey-rgba, 4.5rem, @display-font, bold);
+                .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
                 //border-bottom: 1.5px solid @github-altGrey-rgba;
             }
 
-            .feature-card{
-                width: @feature-card-width;
+            .community-card{
+                width: @community-card-width;
                 margin: 1% auto;
+                padding-left: 6%;
                 .flexBox(row, wrap, space-between, center, center);
 
                 .icon{
@@ -80,8 +82,78 @@
                     color: @comment-icon-color;
                 }
 
-                .features-txt{
-                    width: @feature-card-txt-width;
+                .community-txt{
+                    width: @community-card-txt-width;
+                  
+                    .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
+                }
+            }
+        }
+    }
+}
+
+//Analytics Section
+.analytics-section{
+    width: @full-width;
+    // .flexBox(row, wrap, space-between, center, center);
+    background-color: @white;
+    
+    .analytics-container{
+        width: @analytics-container-width;
+        padding: 5% 0;
+        margin: auto;
+        .flexBox(row-reverse, wrap, space-between, center, center);
+ 
+
+        .analytics-img-container{
+           // width: @analytics-img-container-width;
+            width: @analytics-img-container-width;
+            img{
+                width: @full-width;
+                height: @full-width;
+                border-radius: 15px;
+            }
+        }
+
+        .analytics-content{
+            width: @analytics-content-container;
+            padding: 0;
+            .flexBox(row, wrap, space-evenly, center, center);
+
+            h2{
+                width: @full-width;
+                text-align: center;
+                margin: 0 0 2% 0;
+                padding-bottom: 2%;
+                .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
+                //border-bottom: 1.5px solid @github-altGrey-rgba;
+            }
+
+            .analytics-card{
+                width: @analytics-card-width;
+                margin: 1% auto;
+                padding-left: 8%;
+                .flexBox(row, wrap, space-between, center, center);
+
+                .icon{
+                    font-size: 2.5rem;
+                    color: @icon-color;
+                    padding-right: 10px;
+                }
+
+                .star{
+                    color: @star-icon-color;
+                }
+                .fire{
+                    color: @fire-icon-color;
+                }
+
+                .comments{
+                    color: @comment-icon-color;
+                }
+
+                .analytics-txt{
+                    width: @analytics-card-txt-width;
                   
                     .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
                 }
