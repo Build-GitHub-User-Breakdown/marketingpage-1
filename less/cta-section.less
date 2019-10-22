@@ -1,0 +1,27 @@
+.cta{
+    width: @full-width;
+    padding: 8% 0;
+    background: linear-gradient(@cta-bg-color, @cta-bg-color), url('../imgs/hero-bg.jpg') no-repeat center/100%;
+
+    .cta-container{
+        width: @cta-container-width;
+        margin: auto;
+        .flexBox(row, wrap, space-evenly, center, center);
+
+        h1{
+            .fontFace(@white, 5rem, @display-font, 900);
+        }
+
+        a{
+            padding: 1% 5%;
+            text-decoration: none;
+            .fontFace(@white, 3rem, @system-fonts, bold);
+            background-color: @cta-btn-color;
+            border-radius: 15px;
+
+            &:hover{
+                background-color: @github-drkGrey-rgba;
+            }
+        }
+    }
+}
