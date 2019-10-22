@@ -619,3 +619,11 @@ header .hero-container .hero-header-container a:hover {
   font-weight: 700;
   color: #4a4857;
 }
+.cta {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  padding: 5% 0;
+  background-color: #24292e;
+}
