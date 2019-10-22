@@ -2,36 +2,41 @@ header{
     width: @full-width;
     height: 600px;
     padding: 0;
+    .flexBox(row, wrap, flex-start,  center, center);
     background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% ;
     color: @white;
-    border: 1px solid red;
 
     .hero-container{
         width: @header-container-width;
-        height: 600px;
         margin:  0 auto;
-        .flexBox(row, wrap, space-between, flex-start, flex-start);
-        border: 1px solid blue;
+  
 
         .hero-header-container{
-            width: 50%;
+            width: 60%;
+            // margin: 5% 0;
 
             h1{
-                .fontFace(@white, 8rem,@display-font);
+                margin-bottom: 5%;
+                .fontFace(@white, 8rem,@display-font, 900);
             }
 
             h2{
-                margin-bottom: 20px ;
+                margin-bottom: 8% ;
                 .fontFace(@white, 3rem, @display-font);
             }
 
             a{
     
-                padding: 20px 250px;
+                padding: 15px 150px;
                 text-decoration: none;
+                .fontFace(@white, 2rem, @display-font);
                 background-color: green;
                 color: @white;
-                border-radius: 20px;
+                border-radius: 10px;
+                
+                &:hover{
+                    background-color: @github-altGrey-rgba;
+                }
             }
         }
     }
