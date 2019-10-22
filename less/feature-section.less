@@ -4,14 +4,14 @@
     .feature-motto-container{
         width: @feature-section-container;
         margin: 0 auto;
-        padding: 2% 0;
+        padding: 3% 0;
         .flexBox(row, wrap, center,  center, center);
 
         .feature-heading{
             width: @feature-header-width;
             margin-bottom: 10px;
             text-align: center;
-            .fontFace(@github-drkGrey-rgba, 3.5rem,@display-font, 700);
+            .fontFace(@github-drkGrey-rgba, 4.5rem,@display-font, 700);
         }
 
         .feature-sub-heading{
@@ -53,8 +53,8 @@
                 width: @full-width;
                 margin: 0 0 2% 0;
                 padding-bottom: 2%;
-                .fontFace(@github-altGrey-rgba, 5rem, @display-font, bold);
-                border-bottom: 1.5px solid @github-altGrey-rgba;
+                .fontFace(@github-purple-rgba, 5rem, @display-font, bold);
+                //border-bottom: 1.5px solid @github-altGrey-rgba;
             }
 
             .feature-card{
@@ -65,11 +65,23 @@
                 .icon{
                     font-size: 3rem;
                     color: @icon-color;
-                    padding: 0 20px;
+                    padding-right: 10px;
+                }
+
+                .star{
+                    color: @star-icon-color;
+                }
+                .fire{
+                    color: @fire-icon-color;
+                }
+
+                .comments{
+                    color: @comment-icon-color;
                 }
 
                 .features-txt{
                     width: @feature-card-txt-width;
+                  
                     .fontFace(@github-drkGrey-rgba, 1.8rem, @mono-font, 900);
                 }
             }
