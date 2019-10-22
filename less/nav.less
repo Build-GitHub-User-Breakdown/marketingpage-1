@@ -5,7 +5,7 @@
     
     .nav-container{
         width: @nav-container-width;
-        height: @nav-container-height;
+        max-height: @nav-container-height;
         margin: auto;
         .flexBox(row, wrap, space-between);
 
@@ -16,6 +16,7 @@
 
         .nav-links{
             width: @nav-links-width;
+
             .flexBox(row, wrap, space-between);
             
             a{

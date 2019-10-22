@@ -365,11 +365,13 @@ template {
   font-size: 62.5%;
 }
 header {
+  height: 600px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-content: center;
   align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../imgs/deverlopers.jpg') no-repeat center / 100%;
 }
 .nav-bar {
   width: 100%;
@@ -378,7 +380,7 @@ header {
 }
 .nav-bar .nav-container {
   width: 85%;
-  height: 60px;
+  max-height: 70px;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
