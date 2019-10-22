@@ -401,7 +401,7 @@ header .hero-container .hero-header-container a {
   padding: 15px 150px;
   text-decoration: none;
   font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: normal;
   background-color: green;
   color: white;
@@ -449,4 +449,181 @@ header .hero-container .hero-header-container a:hover {
 }
 .nav-bar .nav-container .nav-links a:hover {
   color: #8685ef;
+}
+.feature-motto-section {
+  width: 100%;
+}
+.feature-motto-section .feature-motto-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3% 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.feature-motto-section .feature-motto-container .feature-heading {
+  width: 55%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+.feature-motto-section .feature-motto-container .feature-sub-heading {
+  width: 50%;
+  text-align: center;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+.icon {
+  font-size: 2.5rem;
+  color: #0366d6;
+  padding-right: 10px;
+}
+.community-section {
+  width: 100%;
+  background-color: white;
+}
+.community-section .community-container {
+  width: 80%;
+  padding: 5% 0;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.community-section .community-container .community-img-container {
+  width: 50%;
+}
+.community-section .community-container .community-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.community-section .community-container .community-content {
+  width: 50%;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.community-section .community-container .community-content h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2% 0;
+  padding-bottom: 2%;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333333;
+}
+.community-section .community-container .community-content .community-card {
+  width: 100%;
+  margin: 1% auto;
+  padding-left: 6%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.community-section .community-container .community-content .community-card .star {
+  color: #ffd33d;
+}
+.community-section .community-container .community-content .community-card .fire {
+  color: #d73a49;
+}
+.community-section .community-container .community-content .community-card .comments {
+  color: #28a745;
+}
+.community-section .community-container .community-content .community-card .community-txt {
+  width: 90%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4a4857;
+}
+.analytics-section {
+  width: 100%;
+  background-color: white;
+}
+.analytics-section .analytics-container {
+  width: 80%;
+  padding: 5% 0;
+  margin: auto;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.analytics-section .analytics-container .analytics-img-container {
+  width: 50%;
+}
+.analytics-section .analytics-container .analytics-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.analytics-section .analytics-container .analytics-content {
+  width: 50%;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.analytics-section .analytics-container .analytics-content h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2% 0;
+  padding-bottom: 2%;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333333;
+}
+.analytics-section .analytics-container .analytics-content .analytics-card {
+  width: 100%;
+  margin: 1% auto;
+  padding-left: 8%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.analytics-section .analytics-container .analytics-content .analytics-card .pulse {
+  color: #d73a49;
+}
+.analytics-section .analytics-container .analytics-content .analytics-card .branch {
+  color: #6e5494;
+}
+.analytics-section .analytics-container .analytics-content .analytics-card .chart {
+  color: #28a745;
+}
+.analytics-section .analytics-container .analytics-content .analytics-card .analytics-txt {
+  width: 90%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4a4857;
+}
+.cta {
+  width: 100%;
+}
+footer {
+  width: 100%;
+  padding: 5% 0;
+  background-color: #24292e;
 }
