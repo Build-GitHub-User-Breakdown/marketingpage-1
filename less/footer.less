@@ -1,5 +1,13 @@
 footer{
     width: @full-width;
-    padding: 5% 0;
+    padding: 3% 0;
     background-color: @github-black-rgba;
+    color: @white;
+
+    .footer-txt{
+        width: @copy-txt-width;
+        margin: auto;
+        text-align: center;
+        .fontFace(@footer-copy-color, 1.5rem, @mono-font, bold);
+    }
 }
