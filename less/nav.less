@@ -1,16 +1,24 @@
 .nav-bar{
-    width: 100%;
+    width: @full-width;
     font-family: @system-fonts;
+    background-color: @nav-bg;
     
     .nav-container{
-        .flexBox();
+        width: @nav-container-width;
+        height: @nav-container-height;
+        margin: auto;
+        padding: 0;
         border: 1px solid blue;
-        background-color: @nav-bg;
+        .flexBox(row, wrap, space-between);
 
         .nav-logo-txt{
-            font-family: @ubuntu-font;
-            font-weight: 900;
-            color: @nav-logo-color;
+            padding: 0;
+            .fontFace(@white, 4rem, @ubuntu-font, bolder);
+        }
+
+        .nav-links{
+            width:50%;
+            border: 1px solid yellow;
         }
     }
 }
