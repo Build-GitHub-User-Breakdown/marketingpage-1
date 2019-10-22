@@ -2,24 +2,36 @@ header{
     width: @full-width;
     height: 600px;
     padding: 0;
-    .flexBox();
-    background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/deverlopers.jpg') no-repeat center/100% ;
+    background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% ;
     color: @white;
+    border: 1px solid red;
 
     .hero-container{
         width: @header-container-width;
-        margin: auto;
-        .flexBox(row, wrap, space-between, center, center);
+        height: 600px;
+        margin:  0 auto;
+        .flexBox(row, wrap, space-between, flex-start, flex-start);
+        border: 1px solid blue;
 
         .hero-header-container{
-           
             width: 50%;
+
             h1{
                 .fontFace(@white, 8rem,@display-font);
             }
 
             h2{
+                margin-bottom: 20px ;
                 .fontFace(@white, 3rem, @display-font);
+            }
+
+            a{
+    
+                padding: 20px 250px;
+                text-decoration: none;
+                background-color: green;
+                color: @white;
+                border-radius: 20px;
             }
         }
     }
