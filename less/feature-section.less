@@ -41,6 +41,7 @@
             img{
                 width: @full-width;
                 height: @full-width;
+                border-radius: 15px;
             }
         }
 
@@ -53,7 +54,7 @@
                 width: @full-width;
                 margin: 0 0 2% 0;
                 padding-bottom: 2%;
-                .fontFace(@github-purple-rgba, 5rem, @display-font, bold);
+                .fontFace(@github-drkGrey-rgba, 4.5rem, @display-font, bold);
                 //border-bottom: 1.5px solid @github-altGrey-rgba;
             }
 
@@ -63,7 +64,7 @@
                 .flexBox(row, wrap, space-between, center, center);
 
                 .icon{
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     color: @icon-color;
                     padding-right: 10px;
                 }
@@ -82,7 +83,7 @@
                 .features-txt{
                     width: @feature-card-txt-width;
                   
-                    .fontFace(@github-drkGrey-rgba, 1.8rem, @mono-font, 900);
+                    .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
                 }
             }
         }
