@@ -401,7 +401,7 @@ header .hero-container .hero-header-container a {
   padding: 15px 150px;
   text-decoration: none;
   font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: normal;
   background-color: green;
   color: white;
@@ -449,4 +449,38 @@ header .hero-container .hero-header-container a:hover {
 }
 .nav-bar .nav-container .nav-links a:hover {
   color: #8685ef;
+}
+.feature-motto-section {
+  width: 100%;
+}
+.feature-motto-section .feature-motto-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.feature-motto-section .feature-motto-container .feature-heading {
+  width: 55%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+.feature-motto-section .feature-motto-container .feature-sub-heading {
+  width: 50%;
+  text-align: center;
+  font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+.features-section {
+  width: 100%;
+  background-color: white;
 }
