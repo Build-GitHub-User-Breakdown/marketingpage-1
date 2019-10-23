@@ -23,20 +23,19 @@
     .we-are-container{
         width: @about-who-we-are-container-width;
         margin: auto;
-        border: 1px solid red;
 
         h2{
             text-align: center;
-            .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
+            .fontFace(@github-drkGrey-rgba, 5rem, @system-fonts, bold);
         }
-        .we-are-txt-container{
-            width: @full-width;
-            .flexBox(columns, wrap, space-between, center, center);
-
-            .we-are-txt{
-                width: 49%;
-            }
+    
+        .we-are-txt{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            text-indent: 3rem;
+            .fontFace(@github-drkGrey-rgba, 1.8rem, @system-fonts);
         }
-        
+           
     }
 }
