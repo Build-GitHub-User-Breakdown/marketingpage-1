@@ -15,5 +15,28 @@
             .fontFace(@white, 8rem,@display-font, 900);
         }
     }
+}
 
+.we-are-section{
+    width: @full-width;
+
+    .we-are-container{
+        width: @about-who-we-are-container-width;
+        margin: auto;
+        border: 1px solid red;
+
+        h2{
+            text-align: center;
+            .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
+        }
+        .we-are-txt-container{
+            width: @full-width;
+            .flexBox(columns, wrap, space-between, center, center);
+
+            .we-are-txt{
+                width: 49%;
+            }
+        }
+        
+    }
 }
