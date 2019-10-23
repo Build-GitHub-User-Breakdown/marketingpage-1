@@ -5,16 +5,6 @@
     .flexBox(row, wrap, flex-start,  center, center);
     background: linear-gradient(@about-hero-bg-color, @about-hero-bg-color), url('../imgs/whiteboard.jpg') no-repeat center/100% ;
     color: @white;
-
-    // .about-hero-container{
-    //     width: @about-container-width;
-    //     margin: auto;
-
-    //     h1{
-    //         margin-bottom: 5%;
-    //         .fontFace(@white, 8rem,@display-font, 900);
-    //     }
-    // }
 }
 
 .we-are-section{
@@ -65,28 +55,21 @@
             max-width: @full-width;
             padding: 1.5% 0;
             .flexBox(row, wrap, space-evenly, center, center);
+             //background-color: @our-team-bg-color;
 
             .team-member-card{
-            width: 25%;
-            height: 400px;
+            width: 29%;
+            height: 450px;
             max-width:  @full-width;
             max-height: @full-width;
             margin: 5% 2%;
             padding: 0 2%;
-            background-color: @white;
-            // border-radius: 20px;
+            //background-color: @white;
+            background-color: @team-member-card-bg;
+            border-radius: 20px;
             box-shadow: 0 4px 8px 0  rgba(0,0,0,.2);
             .flexBox(row, wrap, center, flex-start, flex-start);
-
-                // .team-member-img-container{
-                //     top: -50px;
-                //     position: relative;
-                //     width: 100%;
-                //     margin: 0;
-                //     padding: 0;
-                //     .flexBox(row, wrap, center, center, center);
-                //     border: 1px solid blue;
-
+        
                 img{
                     top: -70px;
                     position: relative;
@@ -95,25 +78,27 @@
                     height: 150px;
                     padding-bottom: 0;
                     border-radius: 100%;
-                    box-shadow: 0 10px 8px 0  rgba(0,0,0,.2);
+                    box-shadow: 0 10px 10px 0px  rgba(0,0,0,.2);
                 }
                 
 
                 h3{
-                 
                     width: @full-width;
                     margin: -30px 0;
                     padding: 0;
                     text-align: center;
-                    .fontFace(@github-drkGrey-rgba,  3rem, @system-fonts);
+                    .fontFace(@team-member-card-header-color,  3rem, @system-fonts, bold);
                 }
 
                 h4{
-                    border: 1px solid blue;
+                    .fontFace(@team-member-card-subheader-color,  1.5rem, @mono-font);
                 }
 
                 .team-member-bio{
-                    .fontFace(@github-drkGrey-rgba, 1.8rem, @system-fonts);
+                    margin: 1.5% 0;
+                    padding: 0 5%;
+                    line-height: 1.2;
+                    .fontFace(@team-member-card-txt-color, 2rem, @display-font);
                 }
             }
         }
