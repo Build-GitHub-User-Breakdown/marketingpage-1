@@ -6,15 +6,15 @@
     background: linear-gradient(@about-bg-color, @about-bg-color), url('../imgs/whiteboard.jpg') no-repeat center/100% ;
     color: @white;
 
-    .about-hero-container{
-        width: @about-container-width;
-        margin: auto;
+    // .about-hero-container{
+    //     width: @about-container-width;
+    //     margin: auto;
 
-        h1{
-            margin-bottom: 5%;
-            .fontFace(@white, 8rem,@display-font, 900);
-        }
-    }
+    //     h1{
+    //         margin-bottom: 5%;
+    //         .fontFace(@white, 8rem,@display-font, 900);
+    //     }
+    // }
 }
 
 .we-are-section{
@@ -22,10 +22,11 @@
 
     .we-are-container{
         width: @about-who-we-are-container-width;
-        margin: auto;
-        padding:  2% 0;
+        margin:  0 auto;
+        padding: 5% 0;
 
         h2{
+            margin: 0;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 5rem, @system-fonts, bold);
         }
@@ -37,7 +38,27 @@
             text-indent: 3rem;
             line-height: 1.8;
             .fontFace(@github-drkGrey-rgba, 1.8rem, @system-fonts);
+        }       
+    }
+}
+
+.our-team-section{
+    width: @full-width;
+    background-color: @our-team-bg-color;
+
+    .our-team-container{
+        width: @about-our-team-container-width;
+        margin: auto;
+
+        h2{
+            margin: 0;
+            text-align: center;
+            .fontFace(@white, 5rem, @system-fonts, bold);
         }
-           
+
+        .team-member-container{
+            width: @full-width;
+             border: 1px solid red;
+        }
     }
 }
