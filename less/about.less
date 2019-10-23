@@ -1,0 +1,19 @@
+.about-header-container{
+    width: @full-width;
+    height: 600px;
+    padding: 0;
+    .flexBox(row, wrap, flex-start,  center, center);
+    background: linear-gradient(@about-bg-color, @about-bg-color), url('../imgs/whiteboard.jpg') no-repeat center/100% ;
+    color: @white;
+
+    .about-hero-container{
+        width: @about-container-width;
+        margin: auto;
+
+        h1{
+            margin-bottom: 5%;
+            .fontFace(@white, 8rem,@display-font, 900);
+        }
+    }
+
+}
