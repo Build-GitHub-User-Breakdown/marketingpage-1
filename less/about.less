@@ -54,6 +54,7 @@
 
         h2{
             margin: 0;
+            padding: 2% 0;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 5rem, @system-fonts, bold);
             // .fontFace(@white, 5rem, @system-fonts, bold);
@@ -61,29 +62,40 @@
 
         .team-member-container{
             width: @full-width;
-            margin: 2% 0;
-            .flexBox(columns, wrap, space-evenly, center, center);
+            max-width: @full-width;
+            margin-top: 5%;
+            .flexBox(row, wrap, space-evenly, center, center);
 
             .team-member-card{
+            width: @full-width;
+            max-width:  350px;
             margin: 2% 2%;
             padding: 1% 2%;
             background-color: @white;
             border-radius: 20px;
-            
+            box-shadow: 0 4px 8px 0  rgba(0,0,0,.2);
 
                 .team-member-img-container{
-                    width: @full-width;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    .flexBox(row, wrap, center, center, center);
                         
                     img{
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 100%;
+                        top: -88px;
+                        position: relative;
+                        max-width: @full-width;
+                        width: 150px;
+                        border-radius: 100%;
                         }
                 }
 
                 h3{
+                    position: relative;
+                    top: -50px;
                     width: @full-width;
                     margin: 0;
+                    padding: 0;
                     text-align: center;
                     .fontFace(@github-drkGrey-rgba,  3rem, @system-fonts);
                 }
