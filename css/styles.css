@@ -712,7 +712,7 @@ header .hero-container .hero-header-container a:hover {
 .our-team-section .our-team-container .team-member-container {
   width: 100%;
   max-width: 100%;
-  margin-top: 5%;
+  padding: 1.5% 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -720,42 +720,42 @@ header .hero-container .hero-header-container a:hover {
   align-items: center;
 }
 .our-team-section .our-team-container .team-member-container .team-member-card {
-  width: 100%;
-  max-width: 350px;
-  margin: 2% 2%;
-  padding: 1% 2%;
+  width: 25%;
+  height: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 5% 2%;
+  padding: 0 2%;
   background-color: white;
-  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.our-team-section .our-team-container .team-member-container .team-member-card .team-member-img-container {
-  width: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
-.our-team-section .our-team-container .team-member-container .team-member-card .team-member-img-container img {
-  top: -88px;
+.our-team-section .our-team-container .team-member-container .team-member-card img {
+  top: -70px;
   position: relative;
   max-width: 100%;
   width: 150px;
+  height: 150px;
+  padding-bottom: 0;
   border-radius: 100%;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .our-team-section .our-team-container .team-member-container .team-member-card h3 {
-  position: relative;
-  top: -50px;
   width: 100%;
-  margin: 0;
+  margin: -30px 0;
   padding: 0;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 3rem;
   font-weight: normal;
   color: #333333;
+}
+.our-team-section .our-team-container .team-member-container .team-member-card h4 {
+  border: 1px solid blue;
 }
 .our-team-section .our-team-container .team-member-container .team-member-card .team-member-bio {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

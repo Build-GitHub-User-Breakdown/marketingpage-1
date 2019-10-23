@@ -63,41 +63,53 @@
         .team-member-container{
             width: @full-width;
             max-width: @full-width;
-            margin-top: 5%;
+            padding: 1.5% 0;
             .flexBox(row, wrap, space-evenly, center, center);
 
             .team-member-card{
-            width: @full-width;
-            max-width:  350px;
-            margin: 2% 2%;
-            padding: 1% 2%;
+            width: 25%;
+            height: 400px;
+            max-width:  @full-width;
+            max-height: @full-width;
+            margin: 5% 2%;
+            padding: 0 2%;
             background-color: @white;
-            border-radius: 20px;
+            // border-radius: 20px;
             box-shadow: 0 4px 8px 0  rgba(0,0,0,.2);
+            .flexBox(row, wrap, center, flex-start, flex-start);
 
-                .team-member-img-container{
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    .flexBox(row, wrap, center, center, center);
-                        
-                    img{
-                        top: -88px;
-                        position: relative;
-                        max-width: @full-width;
-                        width: 150px;
-                        border-radius: 100%;
-                        }
+                // .team-member-img-container{
+                //     top: -50px;
+                //     position: relative;
+                //     width: 100%;
+                //     margin: 0;
+                //     padding: 0;
+                //     .flexBox(row, wrap, center, center, center);
+                //     border: 1px solid blue;
+
+                img{
+                    top: -70px;
+                    position: relative;
+                    max-width: @full-width;
+                    width: 150px;
+                    height: 150px;
+                    padding-bottom: 0;
+                    border-radius: 100%;
+                    box-shadow: 0 10px 8px 0  rgba(0,0,0,.2);
                 }
+                
 
                 h3{
-                    position: relative;
-                    top: -50px;
+                 
                     width: @full-width;
-                    margin: 0;
+                    margin: -30px 0;
                     padding: 0;
                     text-align: center;
                     .fontFace(@github-drkGrey-rgba,  3rem, @system-fonts);
+                }
+
+                h4{
+                    border: 1px solid blue;
                 }
 
                 .team-member-bio{
