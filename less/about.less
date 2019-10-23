@@ -1,6 +1,6 @@
 .about-header-container{
     width: @full-width;
-    height: 200px;
+    height: 450px;
     padding: 0;
     .flexBox(row, wrap, flex-start,  center, center);
     background: linear-gradient(@about-bg-color, @about-bg-color), url('../imgs/whiteboard.jpg') no-repeat center/100% ;
@@ -23,6 +23,7 @@
     .we-are-container{
         width: @about-who-we-are-container-width;
         margin: auto;
+        padding:  2% 0;
 
         h2{
             text-align: center;
@@ -30,10 +31,11 @@
         }
     
         .we-are-txt{
-            width: 80%;
+            width: 60%;
             margin: auto;
             text-align: center;
             text-indent: 3rem;
+            line-height: 1.8;
             .fontFace(@github-drkGrey-rgba, 1.8rem, @system-fonts);
         }
            
