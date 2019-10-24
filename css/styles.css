@@ -558,11 +558,6 @@ header .hero-container .hero-header-container a:hover {
     align-items: center;
   }
 }
-@media only screen and (max-width: 320px) {
-  .nav-bar .nav-container {
-    border: 1px solid pink;
-  }
-}
 .nav-bar .nav-container .nav-logo-txt {
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -614,11 +609,6 @@ header .hero-container .hero-header-container a:hover {
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .nav-bar .nav-container .nav-links {
-    border: 1px solid pink;
   }
 }
 .nav-bar .nav-container .nav-links a {
