@@ -788,6 +788,11 @@ header .hero-container .hero-header-container a:hover {
     padding: 2% 0;
   }
 }
+@media only screen and (max-width: 525px) {
+  .community-section .community-container {
+    border: 1px solid red;
+  }
+}
 .community-section .community-container .community-img-container {
   width: 50%;
 }
