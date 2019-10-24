@@ -29,6 +29,12 @@
 @github-grey-rgba: rgba(216,216,216,1);//#D8D8D8
 @github-grey-alt-rgba: rgba(248,248,248);//#F8F8F8
 
+//Media Queries
+@max1600: ~"only screen and (max-width: 1627px)";
+@max1200: ~"only screen and (max-width: 1200px)";
+@max1000: ~"only screen and (max-width: 1000px)";
+
+
 //body background
 @body-bg: @github-lightGrey-alt-rgba;
 
@@ -41,13 +47,21 @@
 @nav-bg: @github-black-rgba;
 @nav-logo-color: @white;
 
+//nav media queries vars
+@nav-max1600-media-width: 95%;
+@nav-max1600-links-width: 40%;
+
+//header media queries var
+@header-max1600-media-width: 95%;
+@header-container-max1600-media-width: 80%;
+@header-container-max1200-media-width: 90%;
+@header-container-max1000-media-width: 100%;
 
 //header
 @header-container-width: @nav-container-width;
 
 //header colors
-@header-bg-img-color: rgba(110,84,148, .8);
-
+@header-bg-img-color: #6e5494cc;
 
 //feature motto section
 //widths
@@ -72,15 +86,12 @@
 @analytics-img-container-width: @community-img-container-width; 
 @analytics-card-txt-width: @community-card-txt-width;
 
-
 //CTA Section
 @cta-container-width: @nav-container-width;
 
 //CTA colors
-//@cta-bg-color: rgba(51,51,51,1);
 @cta-bg-color: rgba(3,102,214, .9);
 @cta-btn-color: @github-green-rgba;
-
 
 //About Us
 //Widths
@@ -95,8 +106,6 @@
 @team-member-card-header-color: @github-grey-rgba;
 @team-member-card-subheader-color: @github-grey-rgba;
 @team-member-card-txt-color: @github-grey-alt-rgba;
-//@about-bg-color: rgba(3,102,214, .6);
-
 
 //Footer
 //width
@@ -115,3 +124,67 @@
 @pulse-icon-color: @github-red-rgba;
 @branch-icon-color: @github-purple-rgba;
 @chart-icon-color: @github-green-rgba;
+
+//media queries
+
+/////////////max-width 1000px//////////////////////
+@max1000: ~"only screen and (max-width: 1000px)";
+
+//header
+@header-container-max1000-media-width: 97%;
+
+//feature motto section
+@feature-motto-max1000-media-container-width: 95%;
+
+///feature community section
+@feature-community-max1000-media-container-width: 95%;
+@feature-community-content-max1000-media-container: 40%;
+
+////Feature Analytics Section
+@feature-analytics-max1000-media-container-width: 95%;
+@feature-analytics-content-max1000-media-container: @full-width;
+@feature-analytics-img-max1000-media-container-width: 48%;
+@featue-analytics-card-txt-width: @full-width;
+
+
+//////////max-width 800px///////////////////////
+@max800: ~"only screen and (max-width: 800px)";
+
+//header
+@header-container-max800-media-width: 95%;
+
+//feature-motto-section
+@feature-motto-max800-media-container-width: 95%;
+@feature-header-max800-media-width: 75%;
+
+//features-community
+@feature-community-max800-media-container-width: 95%;
+@feature-community-img-max800-media-container-width: 95%;
+@feature-community-content-max800-media-container: @full-width;
+
+
+///////max-width: 500px ///////////////////////
+@max500: ~"only screen and (max-width: 525px)";
+@nav-max500-media-height: 1%;
+
+//header
+@header-container-max500-media-width: 95%;
+@header-signup-btn-max500-media-width: 45%;
+
+//feature motto
+@feature-header-max500-media-width: @full-width;
+@feature-subheader-max500-media-width: 75%;
+
+//features community
+@feature-community-img-max500-media-container-width: @full-width;
+
+
+///////max-width: 320px ///////////
+
+@max320: ~"only screen and (max-width: 320px)";
+
+
+//feature motto
+@feature-subheader-max320-media-width: @full-width;
+
+//header    

@@ -10,6 +10,21 @@
 
         h1{
             .fontFace(@white, 5rem, @display-font, 900);
+
+            @media @max800, @max1000{
+                text-align: center;
+                .fontFace(@white, 2.5rem, @display-font, 900);
+            }
+
+            @media @max500{
+                text-align: center;
+                .fontFace(@white, 2.3rem, @display-font, 900);
+            }
+
+            @media @max320{
+                text-align: center;
+                .fontFace(@white, 1.4rem, @display-font, 900);
+            }
         }
 
         a{
@@ -21,6 +36,24 @@
 
             &:hover{
                 background-color: @github-drkGrey-rgba;
+            }
+
+            @media @max1000{
+                margin: 1%;
+                padding: 2% 4%;
+                .fontFace(@white, 1.5rem, @system-fonts, bold);
+            }
+
+            @media @max800{
+                margin: 2%;
+                padding: 3% 5%;
+                .fontFace(@white, 1.9rem, @system-fonts, bold);
+            }
+
+            @media @max500{
+                margin: 2%;
+                padding: 3% 10%;
+                .fontFace(@white, 1.6rem, @system-fonts, bold);
             }
         }
     }

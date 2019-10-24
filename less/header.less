@@ -2,27 +2,89 @@ header{
     width: @full-width;
     height: 600px;
     padding: 0;
-    .flexBox(row, wrap, flex-start,  center, center);
-    background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% ;
+    .flexBox(row, wrap, center,  center, center);
+    background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100%;
     color: @white;
+
+
+    @media @max800{
+        background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100% ;
+        height: 500px;
+    }
+
+    @media @max500{
+        height: 300px;
+        background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100% ;
+    }
 
     .hero-container{
         width: @header-container-width;
         margin:  0 auto;
-  
+
+        @media @max1600{
+            width: @header-max1600-media-width;
+        }
+
+        @media @max500{
+            width: @header-container-max500-media-width;
+            margin: 0;
+            padding: 0;
+        }
 
         .hero-header-container{
             width: 60%;
             // margin: 5% 0;
+            .flexBox(row, wrap, space-between);
+
+            @media @max1600{
+                width: @header-container-max1600-media-width;
+            }
+
+            @media @max1200{
+                width: @header-container-max1200-media-width;
+            }
+
+            @media @max1000{
+                width: @header-container-max1000-media-width;
+            }
+
 
             h1{
                 margin-bottom: 5%;
                 .fontFace(@white, 8rem,@display-font, 900);
+
+                @media @max1200{
+                    .fontFace(@white, 7rem,@display-font, 900);
+                }
+
+                @media @max800{
+                    .fontFace(@white, 4.8rem,@display-font, 900);
+                }
+
+                @media @max500{
+                    .fontFace(@white, 3rem,@display-font, 900);
+                }
+
+                @media @max320{
+                    .fontFace(@white, 2.5rem,@display-font, 900);
+                }
             }
 
             h2{
                 margin-bottom: 8% ;
                 .fontFace(@white, 3rem, @display-font);
+
+                @media @max800{
+                    .fontFace(@white, 2.2rem,@display-font);
+                }
+
+                @media @max500{
+                    .fontFace(@white, 1.65rem,@display-font);
+                }
+
+                @media @max320{
+                    .fontFace(@white, 1.4rem,@display-font);
+                }
             }
 
             a{
@@ -36,6 +98,29 @@ header{
                 
                 &:hover{
                     background-color: @github-altGrey-rgba;
+                }
+
+                @media @max1000{
+                    padding: 15px 130px;
+                }
+
+                @media @max800{
+                    padding: 15px 80px; 
+                    .fontFace(@white, 2rem, @display-font);
+                }
+
+                @media @max500{
+                    width: @header-signup-btn-max500-media-width;
+                    text-align: center;
+                    padding: 8px 30px;
+                    .fontFace(@white, 1.7rem, @display-font);
+                   
+                }
+
+                @media @max320{
+                    
+                    .fontFace(@white, 1.4rem, @display-font);
+                    
                 }
             }
         }

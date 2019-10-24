@@ -7,17 +7,62 @@
         padding: 3% 0;
         .flexBox(row, wrap, center, center, center);
 
+        @media @max800{
+            width:@feature-motto-max800-media-container-width;
+        }
+
+        @media @max500{
+            width: @feature-header-max500-media-width;
+        }
+
         .feature-heading{
             width: @feature-header-width;
             margin-bottom: 10px;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 4.5rem,@display-font, 700);
+
+            @media @max1000{
+                width: @feature-motto-max1000-media-container-width;
+                .fontFace(@github-drkGrey-rgba, 3.5rem,@display-font, 700);
+            }
+
+            @media @max800{
+                width: @feature-header-max800-media-width;
+                .fontFace(@github-drkGrey-rgba, 3rem,@display-font, 700);
+            }
+
+            @media @max500{
+                width: @feature-header-max500-media-width;
+                padding: 0 2%;
+                .fontFace(@github-drkGrey-rgba, 2.5rem,@display-font, 700);
+            }
+
+            @media @max320{
+                .fontFace(@github-drkGrey-rgba, 1.8rem,@display-font, 700);
+            }
         }
 
         .feature-sub-heading{
             width: @feature-sub-header-width;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 1.5rem,@display-font, 700);
+
+            @media @max800{
+                width: @feature-header-max800-media-width;
+                .fontFace(@github-drkGrey-rgba, 1.3rem,@display-font,700);
+            }
+
+            @media @max500{
+                width: @feature-subheader-max500-media-width;
+                padding: 0 2%;
+                .fontFace(@github-drkGrey-rgba, 1.7rem,@display-font,500);
+            }
+
+            @media @max320{
+                width: @feature-subheader-max320-media-width;
+                padding: 0 2%;
+                .fontFace(@github-drkGrey-rgba, 1.4rem,@display-font,500);
+            }
         }
     }
 }
@@ -26,6 +71,23 @@
     font-size: 3rem;
     color: @icon-color;
     padding-right: 10px;
+
+    @media @max1000{
+        font-size: 1.6rem;
+    }
+
+    @media @max800{
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    @media @max500{
+        font-size: 3rem;
+    }
+
+    @media @max320{
+        font-size: 2rem;
+    }
 }
 
 //Community Section
@@ -40,8 +102,16 @@
         padding: 5% 0;
         margin: auto;
         .flexBox(row, wrap, space-evenly, center, center);
- 
 
+        @media @max1000{
+            width: @feature-analytics-content-max1000-media-container;
+        }
+
+        @media @max800{
+            width: @feature-community-max800-media-container-width;
+            padding: 2% 0;
+        }
+ 
         .community-img-container{
            // width: @community-img-container-width;
             width: @community-img-container-width;
@@ -49,6 +119,22 @@
                 width: @full-width;
                 height: @full-width;
                 border-radius: 15px;
+
+                @media @max500{
+                    border-radius: 0;
+                }
+            }
+        
+            @media @max1000{
+                width: @feature-analytics-img-max1000-media-container-width; 
+            }
+        
+            @media @max800{
+                width: @feature-community-img-max800-media-container-width;
+            }
+
+            @media @max500{
+                width: @feature-community-img-max500-media-container-width;
             }
         }
 
@@ -57,35 +143,103 @@
             padding: 0;
             .flexBox(row, wrap, space-evenly, center, center);
 
+            @media @max1000{
+                width: @feature-community-content-max1000-media-container;
+                marigin: 2% 0;
+            }
+
+            @media @max800{
+                width: @feature-community-content-max800-media-container;
+                margin: 2% 0;
+            }
+
             h2{
                 width: @full-width;
                 text-align: center;
                 margin: 0 0 1% 0;
                 padding-bottom: 1%;
                 .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
-                //border-bottom: 1.5px solid @github-altGrey-rgba;
+               
+                @media @max1000{
+                    .fontFace(@github-drkGrey-rgba, 2.7rem, @display-font, bold);
+                }
+
+                @media @max800{ 
+                    margin: 2% 0;
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 4.3rem, @display-font, bold);
+                }
+
+                @media @max500{
+                    margin: 2% 0;
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
+                }
+
+                @media @max320{
+                    .fontFace(@github-drkGrey-rgba, 2.5rem, @display-font, bold);
+                }
             }
+
 
             .community-card{
                 width: @community-card-width;
                 margin: 1% auto;
                 padding-left: 6%;
                 .flexBox(row, wrap, space-between, center, center);
-
+                
+                .user{
+                    @media @max500{
+                        width: @full-width;
+                    }
+                }
                 .star{
                     color: @star-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
                 .fire{
                     color: @fire-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
 
                 .comments{
                     color: @comment-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
+                }
+
+               @media @max500{
+                   text-align: center;
+                   padding-left: 0;
+                   padding: 2% 0;
                 }
 
                 .community-txt{
                     width: @community-card-txt-width;
                     .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+
+                    @media @max1000{
+                        .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
+                    }
+
+                    @media @max800{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
+
+                    @media @max500{
+                        width: @full-width;
+                        .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+                    }
+
+                    @media @max320{
+                        width: @full-width;
+                        .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
+                    }
                 }
             }
         }
@@ -96,7 +250,6 @@
 .analytics-section{
     width: @full-width;
     padding-bottom: 2%;
-    // .flexBox(row, wrap, space-between, center, center);
     background-color: @white;
     
     .analytics-container{
@@ -104,15 +257,40 @@
         padding: 5% 0;
         margin: auto;
         .flexBox(row-reverse, wrap, space-between, center, center);
- 
+
+        @media @max1000{
+            width: @feature-community-max1000-media-container-width;
+        }
+        
+        @media @max800{
+            width: @feature-community-max800-media-container-width;
+            padding: 2% 0;
+            .flexBox(row, wrap, space-evenly, center, center);
+        }
 
         .analytics-img-container{
-           // width: @analytics-img-container-width;
             width: @analytics-img-container-width;
             img{
                 width: @full-width;
                 height: @full-width;
                 border-radius: 15px;
+
+                @media @max500{
+                    border-radius: 0;
+                }
+            }
+
+            @media @max1000{
+                width: @feature-analytics-img-max1000-media-container-width; 
+            }
+            
+
+            @media @max800{
+                width: @feature-community-img-max800-media-container-width;
+            }
+
+            @media @max500{
+                width: @feature-community-img-max500-media-container-width;
             }
         }
 
@@ -121,13 +299,37 @@
             padding: 0;
             .flexBox(row, wrap, space-evenly, center, center);
 
+            @media @max800{
+                width: @feature-community-content-max800-media-container;
+                margin: 2% 0;
+            }
+
             h2{
                 width: @full-width;
-                // text-align: center;
                 margin: 0 0 1% 0;
                 padding-bottom: 1%;
                 .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
-                //border-bottom: 1.5px solid @github-altGrey-rgba;
+
+                @media @max1000{
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
+                }
+
+                @media @max800{ 
+                    margin: 2% 0;
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 4.3rem, @display-font, bold);
+                }
+
+                @media @max500{
+                    margin: 2% 0;
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
+                }
+                
+                @media @max320{
+                    .fontFace(@github-drkGrey-rgba, 2.5rem, @display-font, bold);
+                }
             }
 
             .analytics-card{
@@ -135,21 +337,68 @@
                 margin: 1% auto;
                 .flexBox(row, wrap, space-between, center, center);
 
+                @media @max1000{
+                    padding-left: 6%;
+                }
+
+                @media @max800{
+                    padding-left: 6%;
+                }
+
+                @media @max500{
+                    text-align: center;
+                    padding: 2% 0;
+                 }
+
+                .code{
+                    @media @max500{
+                        width: @full-width;
+                    }
+                }
+
                 .pulse{
                     color: @pulse-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
 
                 .branch{
                     color: @branch-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
 
                 .chart{
                     color: @chart-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
 
                 .analytics-txt{
                     width: @analytics-card-txt-width;
                     .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+
+                    @media @max1000{
+                        //width: @featue-analytics-card-txt-width;
+                        .fontFace(@github-altGrey-rgba, 1.7rem, @system-fonts, 700);
+                    }
+
+                    @media @max800{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
+
+                    @media @max500{
+                        width: @full-width;
+                        .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+                    }
+
+                    @media @max320{
+                        width: @full-width;
+                        .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
+                    }
                 }
             }
         }

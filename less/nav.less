@@ -2,6 +2,10 @@
     width: @full-width;
     font-family: @system-fonts;
     background-color: @nav-bg;
+
+    @media @max500{
+        height: @nav-max500-media-height;
+    }
     
     .nav-container{
         width: @nav-container-width;
@@ -9,23 +13,81 @@
         margin: auto;
         .flexBox(row, wrap, space-between);
 
+        @media @max1600{
+            width: @nav-max1600-media-width;
+        }
+
+        @media @max500{
+            width: @full-width;
+            max-height: @nav-max500-media-height;
+            margin:  0 auto;
+            padding-top: 3%;
+            .flexBox(row, wrap, space-evenly, center, center);
+        }
+
         .nav-logo-txt{
             padding: 0;
             .fontFace(@white, 4rem, @ubuntu-font, bolder);
+
+            @media @max800{
+                .fontFace(@white, 3rem, @ubuntu-font, bolder);
+            }
+            
+            @media @max500{
+                width: @full-width;
+                margin: 0 0 2% 0;
+                padding: 0;
+                text-align: center;
+            }
         }
 
         .nav-links{
             width: @nav-links-width;
-
             .flexBox(row, wrap, space-between);
-            
+
+            @media @max1600{
+                width: @nav-max1600-links-width;
+            }
+
+            @media @max800{
+                width: 55%;
+            }
+
+            @media @max500{
+                width: @full-width;
+                margin: 0;
+                padding: 0;
+                .flexBox(row, wrap, space-evenly, center, center);
+                //  border: 1px solid yellow;
+            }
+
             a{
                 text-decoration: none;
                 .fontFace(@github-lightGrey-rgba, 1.5rem);
 
                 &:hover{
                     color: @github-purple-alt-rgba;
+
+                    @media @max500{
+                        color: @white;
+                        background-color: @github-blue-rgba;
+                    }
                 }
+
+                @media @max500{
+                    width: 100%;
+                    padding: 2% 0;
+                    border-top: 1px solid @github-altGrey-rgba;
+                    text-align: center;
+                    .fontFace(@github-lightGrey-rgba, 2rem);
+                }
+
+                &:last-child{
+                    @media @max500{
+                        border-bottom: 1px solid @github-altGrey-rgba;
+                    }
+                }
+
             }
         }
     }
