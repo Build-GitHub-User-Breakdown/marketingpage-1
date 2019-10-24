@@ -411,7 +411,6 @@ header .hero-container .hero-header-container {
 }
 @media only screen and (max-width: 1000px) {
   header .hero-container .hero-header-container {
-    border: 1px solid blue;
     width: 97%;
   }
 }
@@ -617,10 +616,9 @@ header .hero-container .hero-header-container a:hover {
   .feature-motto-section .feature-motto-container .feature-heading {
     width: 95%;
     font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #333333;
-    border: 1px solid blue;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -654,6 +652,11 @@ header .hero-container .hero-header-container a:hover {
   color: #0366d6;
   padding-right: 10px;
 }
+@media only screen and (max-width: 1000px) {
+  .icon {
+    font-size: 2rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .icon {
     font-size: 2rem;
@@ -674,6 +677,11 @@ header .hero-container .hero-header-container a:hover {
   align-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1000px) {
+  .community-section .community-container {
+    width: 95%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .community-section .community-container {
     width: 95%;
@@ -688,6 +696,11 @@ header .hero-container .hero-header-container a:hover {
   height: 100%;
   border-radius: 15px;
 }
+@media only screen and (max-width: 1000px) {
+  .community-section .community-container .community-img-container {
+    width: 48%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .community-section .community-container .community-img-container {
     width: 95%;
@@ -701,6 +714,11 @@ header .hero-container .hero-header-container a:hover {
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  .community-section .community-container .community-content {
+    width: 40%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .community-section .community-container .community-content {
@@ -717,6 +735,14 @@ header .hero-container .hero-header-container a:hover {
   font-size: 5rem;
   font-weight: bold;
   color: #333333;
+}
+@media only screen and (max-width: 1000px) {
+  .community-section .community-container .community-content h2 {
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333333;
+  }
 }
 @media only screen and (max-width: 800px) {
   .community-section .community-container .community-content h2 {
@@ -754,6 +780,14 @@ header .hero-container .hero-header-container a:hover {
   font-weight: 700;
   color: #4a4857;
 }
+@media only screen and (max-width: 1000px) {
+  .community-section .community-container .community-content .community-card .community-txt {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4a4857;
+  }
+}
 @media only screen and (max-width: 800px) {
   .community-section .community-container .community-content .community-card .community-txt {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -777,6 +811,11 @@ header .hero-container .hero-header-container a:hover {
   align-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1000px) {
+  .analytics-section .analytics-container {
+    width: 95%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .analytics-section .analytics-container {
     width: 95%;
@@ -795,6 +834,11 @@ header .hero-container .hero-header-container a:hover {
   width: 100%;
   height: 100%;
   border-radius: 15px;
+}
+@media only screen and (max-width: 1000px) {
+  .analytics-section .analytics-container .analytics-img-container {
+    width: 48%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .analytics-section .analytics-container .analytics-img-container {
@@ -825,6 +869,15 @@ header .hero-container .hero-header-container a:hover {
   font-weight: bold;
   color: #333333;
 }
+@media only screen and (max-width: 1000px) {
+  .analytics-section .analytics-container .analytics-content h2 {
+    text-align: center;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333333;
+  }
+}
 @media only screen and (max-width: 800px) {
   .analytics-section .analytics-container .analytics-content h2 {
     margin: 2% 0;
@@ -843,6 +896,11 @@ header .hero-container .hero-header-container a:hover {
   justify-content: space-between;
   align-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 1000px) {
+  .analytics-section .analytics-container .analytics-content .analytics-card {
+    padding-left: 6%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .analytics-section .analytics-container .analytics-content .analytics-card {
@@ -864,6 +922,14 @@ header .hero-container .hero-header-container a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   color: #4a4857;
+}
+@media only screen and (max-width: 1000px) {
+  .analytics-section .analytics-container .analytics-content .analytics-card .analytics-txt {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4a4857;
+  }
 }
 @media only screen and (max-width: 800px) {
   .analytics-section .analytics-container .analytics-content .analytics-card .analytics-txt {
