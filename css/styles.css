@@ -788,11 +788,6 @@ header .hero-container .hero-header-container a:hover {
     padding: 2% 0;
   }
 }
-@media only screen and (max-width: 525px) {
-  .community-section .community-container {
-    border: 1px solid red;
-  }
-}
 .community-section .community-container .community-img-container {
   width: 50%;
 }
@@ -922,6 +917,7 @@ header .hero-container .hero-header-container a:hover {
 @media only screen and (max-width: 525px) {
   .community-section .community-container .community-content .community-card {
     text-align: center;
+    padding-left: 0;
     padding: 2% 0;
   }
 }
@@ -950,8 +946,9 @@ header .hero-container .hero-header-container a:hover {
 }
 @media only screen and (max-width: 525px) {
   .community-section .community-container .community-content .community-card .community-txt {
+    width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #4a4857;
   }
@@ -1147,8 +1144,9 @@ header .hero-container .hero-header-container a:hover {
 }
 @media only screen and (max-width: 525px) {
   .analytics-section .analytics-container .analytics-content .analytics-card .analytics-txt {
+    width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #4a4857;
   }
