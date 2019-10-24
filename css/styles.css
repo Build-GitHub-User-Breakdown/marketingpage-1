@@ -559,14 +559,6 @@ header .hero-container .hero-header-container a:hover {
 .nav-bar .nav-container .nav-links a:hover {
   color: #8685ef;
 }
-@media only screen and (max-width: 800px) {
-  .nav-bar .nav-container .nav-links a {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1.23rem;
-    font-weight: normal;
-    color: #faf8ff;
-  }
-}
 @media only screen and (max-width: 1627px) {
   .nav-bar .nav-container .nav-links {
     width: 40%;
