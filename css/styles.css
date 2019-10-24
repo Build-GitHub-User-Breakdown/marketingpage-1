@@ -458,6 +458,14 @@ header .hero-container .hero-header-container h1 {
     color: white;
   }
 }
+@media only screen and (max-width: 320px) {
+  header .hero-container .hero-header-container h1 {
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: white;
+  }
+}
 header .hero-container .hero-header-container h2 {
   margin-bottom: 8% ;
   font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
@@ -477,6 +485,14 @@ header .hero-container .hero-header-container h2 {
   header .hero-container .hero-header-container h2 {
     font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
     font-size: 1.65rem;
+    font-weight: normal;
+    color: white;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header .hero-container .hero-header-container h2 {
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 1.4rem;
     font-weight: normal;
     color: white;
   }
@@ -517,7 +533,14 @@ header .hero-container .hero-header-container a:hover {
     font-size: 1.7rem;
     font-weight: normal;
     color: white;
-    align-self: flex-end;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header .hero-container .hero-header-container a {
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: white;
   }
 }
 .nav-bar {
