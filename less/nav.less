@@ -4,7 +4,7 @@
     background-color: @nav-bg;
 
     @media @max500{
-        height: 100px;
+        height: @nav-max500-media-height;
     }
     
     .nav-container{
@@ -17,13 +17,12 @@
             width: @nav-max1600-media-width;
         }
 
-        @media @max1200{
-    
-        }
-
         @media @max500{
             width: @full-width;
-            height: 120px;
+            max-height: @nav-max500-media-height;
+            margin:  0 auto;
+            padding-top: 3%;
+            .flexBox(row, wrap, space-evenly, center, center);
         }
 
         @media @max320{
@@ -40,29 +39,19 @@
             
             @media @max500{
                 width: @full-width;
-                margin: 1% 0;
+                margin: 0 0 2% 0;
+                padding: 0;
                 text-align: center;
-                border: 1px solid yellow;
             }
         }
 
         .nav-links{
             width: @nav-links-width;
             .flexBox(row, wrap, space-between);
-            
-            a{
-                text-decoration: none;
-                .fontFace(@github-lightGrey-rgba, 1.5rem);
-
-                &:hover{
-                    color: @github-purple-alt-rgba;
-                }
-            }
 
             @media @max1600{
                 width: @nav-max1600-links-width;
             }
-
 
             @media @max800{
                 width: 55%;
@@ -70,11 +59,43 @@
 
             @media @max500{
                 width: @full-width;
-                border: 1px solid yellow;
+                margin: 0;
+                padding: 0;
+                .flexBox(row, wrap, space-evenly, center, center);
+                //  border: 1px solid yellow;
             }
 
             @media @max320{
                 border: 1px solid pink;
+            }
+            
+            a{
+                text-decoration: none;
+                .fontFace(@github-lightGrey-rgba, 1.5rem);
+
+                &:hover{
+                    color: @github-purple-alt-rgba;
+
+                    @media @max500{
+                        color: @white;
+                        background-color: @github-blue-rgba;
+                    }
+                }
+
+                @media @max500{
+                    width: 100%;
+                    padding: 2% 0;
+                    border-top: 1px solid @github-altGrey-rgba;
+                    text-align: center;
+                    .fontFace(@github-lightGrey-rgba, 2rem);
+                }
+
+                &:last-child{
+                    @media @max500{
+                        border-bottom: 1px solid @github-altGrey-rgba;
+                    }
+                }
+
             }
         }
     }
