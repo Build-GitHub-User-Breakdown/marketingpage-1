@@ -6,6 +6,7 @@ header{
     background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100%;
     color: @white;
 
+
     @media @max800{
         background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100% ;
         height: 500px;
@@ -36,6 +37,7 @@ header{
             }
 
             @media @max1000{
+                border: 1px solid blue;
                 width: @header-container-max1000-media-width;
             }
 
@@ -76,6 +78,10 @@ header{
                 
                 &:hover{
                     background-color: @github-altGrey-rgba;
+                }
+
+                @media @max1000{
+                    padding: 15px 130px;
                 }
 
                 @media @max800{

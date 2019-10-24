@@ -17,6 +17,12 @@
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 4.5rem,@display-font, 700);
 
+            @media @max1000{
+                width: @feature-motto-max1000-media-container-width;
+                .fontFace(@github-drkGrey-rgba, 4rem,@display-font, 700);
+                border: 1px solid blue;
+            }
+
             @media @max800{
                 width: @feature-header-max800-media-width;
                 .fontFace(@github-drkGrey-rgba, 3rem,@display-font, 700);

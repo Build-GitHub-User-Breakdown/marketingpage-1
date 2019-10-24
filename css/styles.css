@@ -411,7 +411,8 @@ header .hero-container .hero-header-container {
 }
 @media only screen and (max-width: 1000px) {
   header .hero-container .hero-header-container {
-    width: 100%;
+    border: 1px solid blue;
+    width: 97%;
   }
 }
 header .hero-container .hero-header-container h1 {
@@ -472,6 +473,11 @@ header .hero-container .hero-header-container a {
 }
 header .hero-container .hero-header-container a:hover {
   background-color: #4a4857;
+}
+@media only screen and (max-width: 1000px) {
+  header .hero-container .hero-header-container a {
+    padding: 15px 130px;
+  }
 }
 @media only screen and (max-width: 800px) {
   header .hero-container .hero-header-container a {
@@ -606,6 +612,16 @@ header .hero-container .hero-header-container a:hover {
   font-size: 4.5rem;
   font-weight: 700;
   color: #333333;
+}
+@media only screen and (max-width: 1000px) {
+  .feature-motto-section .feature-motto-container .feature-heading {
+    width: 95%;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #333333;
+    border: 1px solid blue;
+  }
 }
 @media only screen and (max-width: 800px) {
   .feature-motto-section .feature-motto-container .feature-heading {
