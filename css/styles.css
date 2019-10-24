@@ -510,7 +510,7 @@ header .hero-container .hero-header-container a:hover {
 }
 @media only screen and (max-width: 525px) {
   header .hero-container .hero-header-container a {
-    width: 40%;
+    width: 45%;
     text-align: center;
     padding: 8px 30px;
     font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
@@ -672,6 +672,11 @@ header .hero-container .hero-header-container a:hover {
     width: 95%;
   }
 }
+@media only screen and (max-width: 525px) {
+  .feature-motto-section .feature-motto-container {
+    width: 100%;
+  }
+}
 .feature-motto-section .feature-motto-container .feature-heading {
   width: 55%;
   margin-bottom: 10px;
@@ -699,6 +704,16 @@ header .hero-container .hero-header-container a:hover {
     color: #333333;
   }
 }
+@media only screen and (max-width: 525px) {
+  .feature-motto-section .feature-motto-container .feature-heading {
+    width: 100%;
+    padding: 0 2%;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333333;
+  }
+}
 .feature-motto-section .feature-motto-container .feature-sub-heading {
   width: 50%;
   text-align: center;
@@ -713,6 +728,16 @@ header .hero-container .hero-header-container a:hover {
     font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
+    color: #333333;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .feature-motto-section .feature-motto-container .feature-sub-heading {
+    width: 75%;
+    padding: 0 2%;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
     color: #333333;
   }
 }

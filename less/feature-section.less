@@ -11,6 +11,10 @@
             width:@feature-motto-max800-media-container-width;
         }
 
+        @media @max500{
+            width: @feature-header-max500-media-width;
+        }
+
         .feature-heading{
             width: @feature-header-width;
             margin-bottom: 10px;
@@ -26,6 +30,12 @@
                 width: @feature-header-max800-media-width;
                 .fontFace(@github-drkGrey-rgba, 3rem,@display-font, 700);
             }
+
+            @media @max500{
+                width: @feature-header-max500-media-width;
+                padding: 0 2%;
+                .fontFace(@github-drkGrey-rgba, 1.8rem,@display-font, 700);
+            }
         }
 
         .feature-sub-heading{
@@ -36,6 +46,12 @@
             @media @max800{
                 width: @feature-header-max800-media-width;
                 .fontFace(@github-drkGrey-rgba, 1.3rem,@display-font,700);
+            }
+
+            @media @max500{
+                width: @feature-subheader-max500-media-width;
+                padding: 0 2%;
+                .fontFace(@github-drkGrey-rgba, 1.3rem,@display-font,500);
             }
         }
     }
