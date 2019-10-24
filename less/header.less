@@ -9,11 +9,19 @@ header{
     .hero-container{
         width: @header-container-width;
         margin:  0 auto;
+
+        @media @max1600{
+            width: @header-max1600-media-width;
+        }
   
 
         .hero-header-container{
             width: 60%;
             // margin: 5% 0;
+
+            @media @max1600{
+                width: @header-container-max1600-media-width;
+            }
 
             h1{
                 margin-bottom: 5%;

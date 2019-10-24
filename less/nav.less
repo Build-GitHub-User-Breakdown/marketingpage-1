@@ -2,6 +2,10 @@
     width: @full-width;
     font-family: @system-fonts;
     background-color: @nav-bg;
+
+    @media @max500{
+        height: 100px;
+    }
     
     .nav-container{
         width: @nav-container-width;
@@ -9,9 +13,41 @@
         margin: auto;
         .flexBox(row, wrap, space-between);
 
+        @media @max1600{
+            width: @nav-max1600-media-width;
+        }
+
+        @media @max1200{
+            border: 1px solid blue;
+        }
+
+        @media @max1000{
+            border: 1px solid green;
+        }
+
+        @media @max800{
+            border: 1px solid purple;
+        }
+
+        @media @max500{
+            width: @full-width;
+            height: 120px;
+        }
+
+        @media @max320{
+            border: 1px solid pink;
+        }
+
         .nav-logo-txt{
             padding: 0;
             .fontFace(@white, 4rem, @ubuntu-font, bolder);
+            
+            @media @max500{
+                width: @full-width;
+                margin: 1% 0;
+                text-align: center;
+                border: 1px solid yellow;
+            }
         }
 
         .nav-links{
@@ -26,6 +62,55 @@
                 &:hover{
                     color: @github-purple-alt-rgba;
                 }
+
+                @media @max1600{
+                
+                }
+    
+                @media @max1200{
+                    border: 1px solid blue;
+                }
+    
+                @media @max1000{
+                    border: 1px solid green;
+                }
+    
+                @media @max800{
+                    border: 1px solid purple;
+                }
+    
+                @media @max500{
+                    border: 1px solid yellow;
+                }
+    
+                @media @max320{
+                    border: 1px solid pink;
+                }
+            }
+
+            @media @max1600{
+                width: @nav-max1600-links-width;
+            }
+
+            @media @max1200{
+                border: 1px solid blue;
+            }
+
+            @media @max1000{
+                border: 1px solid green;
+            }
+
+            @media @max800{
+                border: 1px solid purple;
+            }
+
+            @media @max500{
+                width: @full-width;
+                border: 1px solid yellow;
+            }
+
+            @media @max320{
+                border: 1px solid pink;
             }
         }
     }
