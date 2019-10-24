@@ -64,6 +64,10 @@ header{
                 @media @max500{
                     .fontFace(@white, 3rem,@display-font, 900);
                 }
+
+                @media @max320{
+                    .fontFace(@white, 2.5rem,@display-font, 900);
+                }
             }
 
             h2{
@@ -76,6 +80,10 @@ header{
 
                 @media @max500{
                     .fontFace(@white, 1.65rem,@display-font);
+                }
+
+                @media @max320{
+                    .fontFace(@white, 1.4rem,@display-font);
                 }
             }
 
@@ -106,8 +114,13 @@ header{
                     text-align: center;
                     padding: 8px 30px;
                     .fontFace(@white, 1.7rem, @display-font);
-                    align-self: flex-end;
-            
+                   
+                }
+
+                @media @max320{
+                    
+                    .fontFace(@white, 1.4rem, @display-font);
+                    
                 }
             }
         }

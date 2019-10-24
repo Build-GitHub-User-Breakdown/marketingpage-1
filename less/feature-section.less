@@ -36,6 +36,10 @@
                 padding: 0 2%;
                 .fontFace(@github-drkGrey-rgba, 2.5rem,@display-font, 700);
             }
+
+            @media @max320{
+                .fontFace(@github-drkGrey-rgba, 1.8rem,@display-font, 700);
+            }
         }
 
         .feature-sub-heading{
@@ -52,6 +56,12 @@
                 width: @feature-subheader-max500-media-width;
                 padding: 0 2%;
                 .fontFace(@github-drkGrey-rgba, 1.7rem,@display-font,500);
+            }
+
+            @media @max320{
+                width: @feature-subheader-max320-media-width;
+                padding: 0 2%;
+                .fontFace(@github-drkGrey-rgba, 1.4rem,@display-font,500);
             }
         }
     }
@@ -73,6 +83,10 @@
     
     @media @max500{
         font-size: 3rem;
+    }
+
+    @media @max320{
+        font-size: 2rem;
     }
 }
 
@@ -161,7 +175,12 @@
                     text-align: center;
                     .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
                 }
+
+                @media @max320{
+                    .fontFace(@github-drkGrey-rgba, 2.5rem, @display-font, bold);
+                }
             }
+
 
             .community-card{
                 width: @community-card-width;
@@ -215,6 +234,11 @@
                     @media @max500{
                         width: @full-width;
                         .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+                    }
+
+                    @media @max320{
+                        width: @full-width;
+                        .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
                     }
                 }
             }
@@ -302,6 +326,10 @@
                     text-align: center;
                     .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
                 }
+                
+                @media @max320{
+                    .fontFace(@github-drkGrey-rgba, 2.5rem, @display-font, bold);
+                }
             }
 
             .analytics-card{
@@ -365,6 +393,11 @@
                     @media @max500{
                         width: @full-width;
                         .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+                    }
+
+                    @media @max320{
+                        width: @full-width;
+                        .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
                     }
                 }
             }
