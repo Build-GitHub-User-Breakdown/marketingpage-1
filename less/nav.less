@@ -18,15 +18,7 @@
         }
 
         @media @max1200{
-            border: 1px solid blue;
-        }
-
-        @media @max1000{
-            border: 1px solid green;
-        }
-
-        @media @max800{
-            border: 1px solid purple;
+    
         }
 
         @media @max500{
@@ -41,6 +33,10 @@
         .nav-logo-txt{
             padding: 0;
             .fontFace(@white, 4rem, @ubuntu-font, bolder);
+
+            @media @max800{
+                .fontFace(@white, 3rem, @ubuntu-font, bolder);
+            }
             
             @media @max500{
                 width: @full-width;
@@ -52,7 +48,6 @@
 
         .nav-links{
             width: @nav-links-width;
-
             .flexBox(row, wrap, space-between);
             
             a{
@@ -63,28 +58,8 @@
                     color: @github-purple-alt-rgba;
                 }
 
-                @media @max1600{
-                
-                }
-    
-                @media @max1200{
-                    border: 1px solid blue;
-                }
-    
-                @media @max1000{
-                    border: 1px solid green;
-                }
-    
                 @media @max800{
-                    border: 1px solid purple;
-                }
-    
-                @media @max500{
-                    border: 1px solid yellow;
-                }
-    
-                @media @max320{
-                    border: 1px solid pink;
+                    .fontFace(@github-lightGrey-rgba, 1.23rem);
                 }
             }
 
@@ -92,16 +67,9 @@
                 width: @nav-max1600-links-width;
             }
 
-            @media @max1200{
-                border: 1px solid blue;
-            }
-
-            @media @max1000{
-                border: 1px solid green;
-            }
 
             @media @max800{
-                border: 1px solid purple;
+                width: 55%;
             }
 
             @media @max500{

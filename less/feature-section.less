@@ -145,7 +145,12 @@
         padding: 5% 0;
         margin: auto;
         .flexBox(row-reverse, wrap, space-between, center, center);
- 
+        
+        @media @max800{
+            width: @feature-community-max800-media-container-width;
+            padding: 2% 0;
+            .flexBox(row, wrap, space-evenly, center, center);
+        }
 
         .analytics-img-container{
            // width: @analytics-img-container-width;
@@ -155,6 +160,10 @@
                 height: @full-width;
                 border-radius: 15px;
             }
+
+            @media @max800{
+                width: @feature-community-img-max800-media-container-width;
+            }
         }
 
         .analytics-content{
@@ -162,19 +171,32 @@
             padding: 0;
             .flexBox(row, wrap, space-evenly, center, center);
 
+            @media @max800{
+                width: @feature-community-content-max800-media-container;
+                margin: 2% 0;
+            }
+
             h2{
                 width: @full-width;
-                // text-align: center;
                 margin: 0 0 1% 0;
                 padding-bottom: 1%;
                 .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
-                //border-bottom: 1.5px solid @github-altGrey-rgba;
+
+                @media @max800{ 
+                    margin: 2% 0;
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 4.3rem, @display-font, bold);
+                }
             }
 
             .analytics-card{
                 width: @analytics-card-width;
                 margin: 1% auto;
                 .flexBox(row, wrap, space-between, center, center);
+
+                @media @max800{
+                    padding-left: 6%;
+                }
 
                 .pulse{
                     color: @pulse-icon-color;
@@ -191,6 +213,10 @@
                 .analytics-txt{
                     width: @analytics-card-txt-width;
                     .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+
+                    @media @max800{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
                 }
             }
         }
