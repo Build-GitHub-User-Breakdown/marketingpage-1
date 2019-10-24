@@ -1259,6 +1259,15 @@ header .hero-container .hero-header-container a:hover {
     color: white;
   }
 }
+@media only screen and (max-width: 320px) {
+  .cta .cta-container h1 {
+    text-align: center;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: white;
+  }
+}
 .cta .cta-container a {
   padding: 1% 5%;
   text-decoration: none;
