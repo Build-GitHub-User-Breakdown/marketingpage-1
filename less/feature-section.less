@@ -97,10 +97,6 @@
             width: @feature-community-max800-media-container-width;
             padding: 2% 0;
         }
-
-        @media @max500{
-            border: 1px solid red;
-        }
  
         .community-img-container{
            // width: @community-img-container-width;
@@ -252,6 +248,10 @@
                 width: @full-width;
                 height: @full-width;
                 border-radius: 15px;
+
+                @media @max500{
+                    border-radius: 0;
+                }
             }
 
             @media @max1000{
@@ -261,6 +261,10 @@
 
             @media @max800{
                 width: @feature-community-img-max800-media-container-width;
+            }
+
+            @media @max500{
+                width: @feature-community-img-max500-media-container-width;
             }
         }
 
@@ -290,6 +294,12 @@
                     text-align: center;
                     .fontFace(@github-drkGrey-rgba, 4.3rem, @display-font, bold);
                 }
+
+                @media @max500{
+                    margin: 2% 0;
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
+                }
             }
 
             .analytics-card{
@@ -305,16 +315,36 @@
                     padding-left: 6%;
                 }
 
+                @media @max500{
+                    text-align: center;
+                    padding: 2% 0;
+                 }
+
+                .code{
+                    @media @max500{
+                        width: @full-width;
+                    }
+                }
+
                 .pulse{
                     color: @pulse-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
 
                 .branch{
                     color: @branch-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
 
                 .chart{
                     color: @chart-icon-color;
+                    @media @max500{
+                        width: @full-width;
+                    }
                 }
 
                 .analytics-txt{
@@ -328,6 +358,10 @@
 
                     @media @max800{
                         .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
+
+                    @media @max500{
+                        .fontFace(@github-altGrey-rgba, 2.3rem, @system-fonts, 700);
                     }
                 }
             }
