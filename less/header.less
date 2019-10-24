@@ -2,9 +2,18 @@ header{
     width: @full-width;
     height: 600px;
     padding: 0;
-    .flexBox(row, wrap, flex-start,  center, center);
-    background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% ;
+    .flexBox(row, wrap, center,  center, center);
+    background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100%;
     color: @white;
+
+    @media @max800{
+        background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100% ;
+        height: 500px;
+    }
+
+    @media @max500{
+        background: linear-gradient(@header-bg-img-color, @header-bg-img-color), url('../imgs/bridge.jpg') no-repeat center/100% 100% ;
+    }
 
     .hero-container{
         width: @header-container-width;
@@ -13,7 +22,6 @@ header{
         @media @max1600{
             width: @header-max1600-media-width;
         }
-  
 
         .hero-header-container{
             width: 60%;
@@ -40,7 +48,11 @@ header{
                 }
 
                 @media @max800{
-                    .fontFace(@white, 6.5rem,@display-font, 900);
+                    .fontFace(@white, 4.8rem,@display-font, 900);
+                }
+
+                @media @max500{
+                    .fontFace(@white, 4.5rem,@display-font, 900);
                 }
             }
 
@@ -49,7 +61,7 @@ header{
                 .fontFace(@white, 3rem, @display-font);
 
                 @media @max800{
-                    .fontFace(@white, 2.6rem,@display-font);
+                    .fontFace(@white, 2.2rem,@display-font);
                 }
             }
 
@@ -68,7 +80,7 @@ header{
 
                 @media @max800{
                     padding: 15px 80px; 
-                    .fontFace(@white, 2.3rem, @display-font);
+                    .fontFace(@white, 2rem, @display-font);
                 }
             }
         }

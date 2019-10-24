@@ -7,17 +7,31 @@
         padding: 3% 0;
         .flexBox(row, wrap, center, center, center);
 
+        @media @max800{
+            width:@feature-motto-max800-media-container-width;
+        }
+
         .feature-heading{
             width: @feature-header-width;
             margin-bottom: 10px;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 4.5rem,@display-font, 700);
+
+            @media @max800{
+                width: @feature-header-max800-media-width;
+                .fontFace(@github-drkGrey-rgba, 3rem,@display-font, 700);
+            }
         }
 
         .feature-sub-heading{
             width: @feature-sub-header-width;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 1.5rem,@display-font, 700);
+
+            @media @max800{
+                width: @feature-header-max800-media-width;
+                .fontFace(@github-drkGrey-rgba, 1.3rem,@display-font,700);
+            }
         }
     }
 }
@@ -26,6 +40,10 @@
     font-size: 3rem;
     color: @icon-color;
     padding-right: 10px;
+
+    @media @max800{
+        font-size: 2rem;
+    }
 }
 
 //Community Section
@@ -40,8 +58,12 @@
         padding: 5% 0;
         margin: auto;
         .flexBox(row, wrap, space-evenly, center, center);
- 
 
+        @media @max800{
+            width: @feature-community-max800-media-container-width;
+            padding: 2% 0;
+        }
+ 
         .community-img-container{
            // width: @community-img-container-width;
             width: @community-img-container-width;
@@ -50,12 +72,21 @@
                 height: @full-width;
                 border-radius: 15px;
             }
+
+            @media @max800{
+                width: @feature-community-img-max800-media-container-width;
+            }
         }
 
         .community-content{
             width: @community-content-container;
             padding: 0;
             .flexBox(row, wrap, space-evenly, center, center);
+
+            @media @max800{
+                width: @feature-community-content-max800-media-container;
+                margin: 2% 0;
+            }
 
             h2{
                 width: @full-width;
@@ -64,6 +95,12 @@
                 padding-bottom: 1%;
                 .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
                 //border-bottom: 1.5px solid @github-altGrey-rgba;
+
+                @media @max800{ 
+                    margin: 2% 0;
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 4.3rem, @display-font, bold);
+                }
             }
 
             .community-card{
@@ -86,6 +123,10 @@
                 .community-txt{
                     width: @community-card-txt-width;
                     .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+
+                    @media @max800{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
                 }
             }
         }
