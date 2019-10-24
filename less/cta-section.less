@@ -11,7 +11,7 @@
         h1{
             .fontFace(@white, 5rem, @display-font, 900);
 
-            @media @max800{
+            @media @max800, @max1000{
                 text-align: center;
                 .fontFace(@white, 2.5rem, @display-font, 900);
             }
@@ -26,6 +26,12 @@
 
             &:hover{
                 background-color: @github-drkGrey-rgba;
+            }
+
+            @media @max1000{
+                margin: 1%;
+                padding: 2% 4%;
+                .fontFace(@white, 1.5rem, @system-fonts, bold);
             }
 
             @media @max800{

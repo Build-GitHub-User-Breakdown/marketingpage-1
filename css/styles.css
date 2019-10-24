@@ -696,6 +696,11 @@ header .hero-container .hero-header-container a:hover {
   height: 100%;
   border-radius: 15px;
 }
+@media only screen and (max-width: 1000px) {
+  .community-section .community-container .community-img-container {
+    width: 48%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .community-section .community-container .community-img-container {
     width: 95%;
@@ -831,6 +836,11 @@ header .hero-container .hero-header-container a:hover {
   height: 100%;
   border-radius: 15px;
 }
+@media only screen and (max-width: 1000px) {
+  .analytics-section .analytics-container .analytics-img-container {
+    width: 48%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .analytics-section .analytics-container .analytics-img-container {
     width: 95%;
@@ -917,7 +927,7 @@ header .hero-container .hero-header-container a:hover {
 @media only screen and (max-width: 1000px) {
   .analytics-section .analytics-container .analytics-content .analytics-card .analytics-txt {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #4a4857;
   }
@@ -950,7 +960,7 @@ header .hero-container .hero-header-container a:hover {
   font-weight: 900;
   color: white;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px), only screen and (max-width: 1000px) {
   .cta .cta-container h1 {
     text-align: center;
     font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
@@ -971,6 +981,16 @@ header .hero-container .hero-header-container a:hover {
 }
 .cta .cta-container a:hover {
   background-color: #333333;
+}
+@media only screen and (max-width: 1000px) {
+  .cta .cta-container a {
+    margin: 1%;
+    padding: 2% 4%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
 }
 @media only screen and (max-width: 800px) {
   .cta .cta-container a {
@@ -1115,7 +1135,7 @@ footer .footer-txt {
   font-weight: bold;
   color: white;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px), only screen and (max-width: 1000px) {
   footer {
     padding: 6% 0;
   }

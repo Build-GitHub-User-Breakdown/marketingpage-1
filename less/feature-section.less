@@ -86,9 +86,9 @@
                 border-radius: 15px;
             }
         
-            // @media @max1000{
-            //     width: @feature-analytics-img-max800-media-container-width; 
-            // }
+            @media @max1000{
+                width: @feature-analytics-img-max1000-media-container-width; 
+            }
         
             @media @max800{
                 width: @feature-community-img-max800-media-container-width;
@@ -193,6 +193,10 @@
                 height: @full-width;
                 border-radius: 15px;
             }
+
+            @media @max1000{
+                width: @feature-analytics-img-max1000-media-container-width; 
+            }
             
 
             @media @max800{
@@ -258,7 +262,8 @@
                     .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
 
                     @media @max1000{
-                        .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
+                        //width: @featue-analytics-card-txt-width;
+                        .fontFace(@github-altGrey-rgba, 1.7rem, @system-fonts, 700);
                     }
 
                     @media @max800{
