@@ -373,7 +373,7 @@ header {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  background: linear-gradient(rgba(110, 84, 148, 0.8), rgba(110, 84, 148, 0.8)), url('../imgs/bridge.jpg') no-repeat center / 100%;
+  background: linear-gradient(#6e5494cc, #6e5494cc), url('../imgs/bridge.jpg') no-repeat center / 100%;
   color: white;
 }
 header .hero-container {
@@ -393,6 +393,16 @@ header .hero-container .hero-header-container {
     width: 80%;
   }
 }
+@media only screen and (max-width: 1200px) {
+  header .hero-container .hero-header-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header .hero-container .hero-header-container {
+    width: 100%;
+  }
+}
 header .hero-container .hero-header-container h1 {
   margin-bottom: 5%;
   font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
@@ -400,12 +410,36 @@ header .hero-container .hero-header-container h1 {
   font-weight: 900;
   color: white;
 }
+@media only screen and (max-width: 1200px) {
+  header .hero-container .hero-header-container h1 {
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 7rem;
+    font-weight: 900;
+    color: white;
+  }
+}
+@media only screen and (max-width: 800px) {
+  header .hero-container .hero-header-container h1 {
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 6.5rem;
+    font-weight: 900;
+    color: white;
+  }
+}
 header .hero-container .hero-header-container h2 {
   margin-bottom: 8% ;
   font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
   font-size: 3rem;
   font-weight: normal;
   color: white;
+}
+@media only screen and (max-width: 800px) {
+  header .hero-container .hero-header-container h2 {
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: white;
+  }
 }
 header .hero-container .hero-header-container a {
   padding: 15px 150px;
@@ -419,6 +453,15 @@ header .hero-container .hero-header-container a {
 }
 header .hero-container .hero-header-container a:hover {
   background-color: #4a4857;
+}
+@media only screen and (max-width: 800px) {
+  header .hero-container .hero-header-container a {
+    padding: 15px 80px;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 2.3rem;
+    font-weight: normal;
+    color: white;
+  }
 }
 .nav-bar {
   width: 100%;

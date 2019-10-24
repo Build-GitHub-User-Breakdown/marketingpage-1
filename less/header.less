@@ -23,14 +23,34 @@ header{
                 width: @header-container-max1600-media-width;
             }
 
+            @media @max1200{
+                width: @header-container-max1200-media-width;
+            }
+
+            @media @max1000{
+                width: @header-container-max1000-media-width;
+            }
+
             h1{
                 margin-bottom: 5%;
                 .fontFace(@white, 8rem,@display-font, 900);
+
+                @media @max1200{
+                    .fontFace(@white, 7rem,@display-font, 900);
+                }
+
+                @media @max800{
+                    .fontFace(@white, 6.5rem,@display-font, 900);
+                }
             }
 
             h2{
                 margin-bottom: 8% ;
                 .fontFace(@white, 3rem, @display-font);
+
+                @media @max800{
+                    .fontFace(@white, 2.6rem,@display-font);
+                }
             }
 
             a{
@@ -44,6 +64,11 @@ header{
                 
                 &:hover{
                     background-color: @github-altGrey-rgba;
+                }
+
+                @media @max800{
+                    padding: 15px 80px; 
+                    .fontFace(@white, 2.3rem, @display-font);
                 }
             }
         }
