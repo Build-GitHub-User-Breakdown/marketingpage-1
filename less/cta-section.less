@@ -11,6 +11,11 @@
         h1{
             .fontFace(@white, 5rem, @display-font, 900);
 
+            @media @max1600{
+                text-align: center;
+                .fontFace(@white, 4rem, @display-font, 900);
+            }
+
             @media @max1200{
                 text-align: center;
                 .fontFace(@white, 3rem, @display-font, 900);
