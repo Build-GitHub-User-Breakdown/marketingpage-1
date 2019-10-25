@@ -7,6 +7,11 @@
         padding: 3% 0;
         .flexBox(row, wrap, center, center, center);
 
+        @media @max1200{
+            border: 1px solid red;
+            width: @feature-motto-max1200-media-container-width;
+        }
+
         @media @max800{
             width:@feature-motto-max800-media-container-width;
         }
@@ -20,6 +25,10 @@
             margin-bottom: 10px;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 4.5rem,@display-font, 700);
+
+            @media @max1200{
+                width: @feature-motto-max1200-heading-width;
+            }
 
             @media @max1000{
                 width: @feature-motto-max1000-media-container-width;
@@ -46,6 +55,11 @@
             width: @feature-sub-header-width;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 1.5rem,@display-font, 700);
+
+            @media @max1200{
+                width: @feature-motto-max1200-subheading-width;
+                .fontFace(@github-drkGrey-rgba, 2rem,@display-font,700);
+            }
 
             @media @max800{
                 width: @feature-header-max800-media-width;
@@ -326,7 +340,6 @@
                     text-align: center;
                     .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
                 }
-                
                 @media @max320{
                     .fontFace(@github-drkGrey-rgba, 2.5rem, @display-font, bold);
                 }
