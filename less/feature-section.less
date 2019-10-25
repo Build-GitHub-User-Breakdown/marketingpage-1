@@ -7,6 +7,10 @@
         padding: 3% 0;
         .flexBox(row, wrap, center, center, center);
 
+        @media @max1600{
+            width: @feature-motto-max1600-media-container-width;
+        }
+
         @media @max1200{
             width: @feature-motto-max1200-media-container-width;
         }
@@ -24,6 +28,11 @@
             margin-bottom: 10px;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 4.5rem,@display-font, 700);
+
+            @media @max1600{
+                width: @feature-motto-max1600-heading-width;
+                .fontFace(@github-drkGrey-rgba, 4rem,@display-font, 700);
+            }
 
             @media @max1200{
                 width: @feature-motto-max1200-heading-width;
@@ -54,6 +63,11 @@
             width: @feature-sub-header-width;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 1.5rem,@display-font, 700);
+
+            @media @max1600{
+                width: @feature-motto-max1600-subheading-width;
+                .fontFace(@github-drkGrey-rgba, 1.8rem,@display-font,700);
+            }
 
             @media @max1200{
                 width: @feature-motto-max1200-subheading-width;

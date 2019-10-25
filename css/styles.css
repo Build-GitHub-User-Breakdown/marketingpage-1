@@ -680,6 +680,11 @@ header .hero-container .hero-header-container a:hover {
   align-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1627px) {
+  .feature-motto-section .feature-motto-container {
+    width: 97%;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .feature-motto-section .feature-motto-container {
     width: 97%;
@@ -703,6 +708,15 @@ header .hero-container .hero-header-container a:hover {
   font-size: 4.5rem;
   font-weight: 700;
   color: #333333;
+}
+@media only screen and (max-width: 1627px) {
+  .feature-motto-section .feature-motto-container .feature-heading {
+    width: 75%;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #333333;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .feature-motto-section .feature-motto-container .feature-heading {
@@ -752,6 +766,15 @@ header .hero-container .hero-header-container a:hover {
   font-size: 1.5rem;
   font-weight: 700;
   color: #333333;
+}
+@media only screen and (max-width: 1627px) {
+  .feature-motto-section .feature-motto-container .feature-sub-heading {
+    width: 65%;
+    font-family: InterUI, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333333;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .feature-motto-section .feature-motto-container .feature-sub-heading {
