@@ -7,6 +7,14 @@
         padding: 3% 0;
         .flexBox(row, wrap, center, center, center);
 
+        @media @max1600{
+            width: @feature-motto-max1600-media-container-width;
+        }
+
+        @media @max1200{
+            width: @feature-motto-max1200-media-container-width;
+        }
+
         @media @max800{
             width:@feature-motto-max800-media-container-width;
         }
@@ -20,6 +28,15 @@
             margin-bottom: 10px;
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 4.5rem,@display-font, 700);
+
+            @media @max1600{
+                width: @feature-motto-max1600-heading-width;
+                .fontFace(@github-drkGrey-rgba, 4rem,@display-font, 700);
+            }
+
+            @media @max1200{
+                width: @feature-motto-max1200-heading-width;
+            }
 
             @media @max1000{
                 width: @feature-motto-max1000-media-container-width;
@@ -47,6 +64,16 @@
             text-align: center;
             .fontFace(@github-drkGrey-rgba, 1.5rem,@display-font, 700);
 
+            @media @max1600{
+                width: @feature-motto-max1600-subheading-width;
+                .fontFace(@github-drkGrey-rgba, 1.8rem,@display-font,700);
+            }
+
+            @media @max1200{
+                width: @feature-motto-max1200-subheading-width;
+                .fontFace(@github-drkGrey-rgba, 2rem,@display-font,700);
+            }
+
             @media @max800{
                 width: @feature-header-max800-media-width;
                 .fontFace(@github-drkGrey-rgba, 1.3rem,@display-font,700);
@@ -71,6 +98,14 @@
     font-size: 3rem;
     color: @icon-color;
     padding-right: 10px;
+
+    @media @max1600{
+        font-size: 2rem;
+    }
+
+    @media @max1200{
+        font-size: 2rem;
+    }
 
     @media @max1000{
         font-size: 1.6rem;
@@ -103,6 +138,14 @@
         margin: auto;
         .flexBox(row, wrap, space-evenly, center, center);
 
+        @media @max1600{
+            width: @feature-community-content-max1600-media-container;
+        }
+
+        @media @max1200{
+            width: @feature-community-content-max1200-media-container;
+        }
+
         @media @max1000{
             width: @feature-analytics-content-max1000-media-container;
         }
@@ -124,6 +167,10 @@
                     border-radius: 0;
                 }
             }
+
+            @media @max1600{
+                width: @feature-community-img-container;
+            }
         
             @media @max1000{
                 width: @feature-analytics-img-max1000-media-container-width; 
@@ -143,6 +190,14 @@
             padding: 0;
             .flexBox(row, wrap, space-evenly, center, center);
 
+            @media @max1600{
+                width: @feature-community-content-max1600-text-container;
+            }
+
+            @media @max1200{
+                width: @feature-community-content-max1200-text-container;
+            }
+
             @media @max1000{
                 width: @feature-community-content-max1000-media-container;
                 marigin: 2% 0;
@@ -159,6 +214,14 @@
                 margin: 0 0 1% 0;
                 padding-bottom: 1%;
                 .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
+
+                @media @max1600{
+                    .fontFace(@github-drkGrey-rgba, 3.3rem, @display-font, bold);
+                }
+
+                @media @max1200{
+                    .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
+                }
                
                 @media @max1000{
                     .fontFace(@github-drkGrey-rgba, 2.7rem, @display-font, bold);
@@ -223,6 +286,14 @@
                     width: @community-card-txt-width;
                     .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
 
+                    @media @max1600{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
+
+                    @media @max1200{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
+
                     @media @max1000{
                         .fontFace(@github-altGrey-rgba, 1.8rem, @system-fonts, 700);
                     }
@@ -258,6 +329,14 @@
         margin: auto;
         .flexBox(row-reverse, wrap, space-between, center, center);
 
+        @media @max1600{
+            width: @feature-analytics-conten-max1600-width;
+        }
+
+        @media @max1200{
+            width: @feature-community-content-max1200-media-container;
+        }
+
         @media @max1000{
             width: @feature-community-max1000-media-container-width;
         }
@@ -280,6 +359,17 @@
                 }
             }
 
+            @media @max1600{    
+                border: 1px solid blue;
+                margin-right: 2%;
+                width: @feature-analytics-img-container;
+            }
+
+            @media @max1200{    
+                margin-right: 2%;
+                width: @feature-analytics-img-max1200-media-container-width;
+            }
+
             @media @max1000{
                 width: @feature-analytics-img-max1000-media-container-width; 
             }
@@ -299,6 +389,16 @@
             padding: 0;
             .flexBox(row, wrap, space-evenly, center, center);
 
+            @media @max1600{
+                margin-left: 2%;
+                width: @feature-analytics-content-max1600-text-container;
+            }
+
+            @media @max1200{
+                margin-left: 2%;
+                width: @feature-analytics-content-max1200-text-container;
+            }
+
             @media @max800{
                 width: @feature-community-content-max800-media-container;
                 margin: 2% 0;
@@ -309,6 +409,15 @@
                 margin: 0 0 1% 0;
                 padding-bottom: 1%;
                 .fontFace(@github-drkGrey-rgba, 5rem, @display-font, bold);
+
+                @media @max1600{
+                    .fontFace(@github-drkGrey-rgba, 3.3rem, @display-font, bold);
+                }
+
+                @media @max1200{
+                    text-align: center;
+                    .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
+                }
 
                 @media @max1000{
                     text-align: center;
@@ -326,7 +435,6 @@
                     text-align: center;
                     .fontFace(@github-drkGrey-rgba, 3rem, @display-font, bold);
                 }
-                
                 @media @max320{
                     .fontFace(@github-drkGrey-rgba, 2.5rem, @display-font, bold);
                 }
@@ -380,6 +488,14 @@
                 .analytics-txt{
                     width: @analytics-card-txt-width;
                     .fontFace(@github-altGrey-rgba, 2.5rem, @system-fonts, 700);
+
+                    @media @max1600{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
+
+                    @media @max1200{
+                        .fontFace(@github-altGrey-rgba, 2rem, @system-fonts, 700);
+                    }
 
                     @media @max1000{
                         //width: @featue-analytics-card-txt-width;
